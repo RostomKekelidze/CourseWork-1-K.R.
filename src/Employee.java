@@ -39,14 +39,15 @@ public class Employee {
     }
 
 
-    public String toSring() {
+    @Override
+    public String toString() {
         return String.format("id :%d,ФИО :%s ,ЗП : %d, № Отдела: %d",
                 id,
                 fullName,
                 salary,
-                departmentID
-
-        );
-
+                departmentID);
     }
+
+
+
 }
